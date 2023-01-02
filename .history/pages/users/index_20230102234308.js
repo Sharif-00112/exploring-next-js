@@ -4,7 +4,6 @@ const index = ({users}) => {
     return (
         <div>
             <h2>Available users: {users.length}</h2>
-            <br />
         </div>
     );
 };
@@ -16,6 +15,6 @@ export async function getStaticProps() {
     const res = await fetch('https://jsonplaceholder.typicode.com/users')
     const users = await res.json();
     return{
-        props: {users}
+        props: users
     }
 }

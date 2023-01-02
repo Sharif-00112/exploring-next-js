@@ -4,7 +4,6 @@ const index = ({users}) => {
     return (
         <div>
             <h2>Available users: {users.length}</h2>
-            <br />
         </div>
     );
 };

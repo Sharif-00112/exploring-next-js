@@ -5,6 +5,13 @@ const index = ({users}) => {
         <div>
             <h2>Available users: {users.length}</h2>
             <br />
+            {
+                users.map(user => {
+                    {
+                        .
+                    }
+                })
+            }
         </div>
     );
 };
