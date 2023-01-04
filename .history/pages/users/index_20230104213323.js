@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link'
 
 const index = ({users}) => {
     return (
@@ -8,7 +7,7 @@ const index = ({users}) => {
             <br />
             {
                 users.map(user => <p key={user.id}>
-                    {user.name} <Link href={`users/${user.id}`}> -Details</Link>
+                    {user.name}
                     </p>)
             }
         </div>

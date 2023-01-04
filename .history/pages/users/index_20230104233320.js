@@ -8,7 +8,7 @@ const index = ({users}) => {
             <br />
             {
                 users.map(user => <p key={user.id}>
-                    {user.name} <Link href={`users/${user.id}`}> -Details</Link>
+                    {user.name} <Link href={`users/${id}`}> -Details</Link>
                     </p>)
             }
         </div>

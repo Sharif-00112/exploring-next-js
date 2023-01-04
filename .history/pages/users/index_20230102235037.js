@@ -1,16 +1,10 @@
 import React from 'react';
-import Link from 'next/link'
 
 const index = ({users}) => {
     return (
         <div>
             <h2>Total users: {users.length}</h2>
             <br />
-            {
-                users.map(user => <p key={user.id}>
-                    {user.name} <Link href={`users/${user.id}`}> -Details</Link>
-                    </p>)
-            }
         </div>
     );
 };
